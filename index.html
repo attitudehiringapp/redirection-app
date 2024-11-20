@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Descargar App - Attitude Hiring</title>
+    <script>
+        window.onload = function() {
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Detectar Android
+            if (/android/i.test(userAgent)) {
+                window.location.href = "https://play.google.com/store/apps/details?id=com.niveliv.AppWebTTIPubAttitude&pcampaignid=web_share";
+            } 
+            // Detectar iOS
+            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                window.location.href = "https://apps.apple.com/es/app/attitude-hiring/id6736949254";
+            } 
+            // Detectar PC u otros dispositivos
+            else {
+                window.location.href = "https://portal.attitude.tech/Trabajadores/Candi/Candisaludo.aspx";
+            }
+        };
+    </script>
+</head>
+<body>
+    <p>Redirigiendo...</p>
+</body>
+</html>
